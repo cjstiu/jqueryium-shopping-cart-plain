@@ -14,7 +14,7 @@ $(document).ready(function() {
       $('.subtotal').each(function() {
         total += Number($(this).text().replace('$', ''));
       });
-      $('h2:contains("Total Price")').next().text(`$${total.toFixed(2)}`);
+      $('#total-price').text(`$${total.toFixed(2)}`);
     }
   
     // Event listener for quantity input changes with 1-second delay
